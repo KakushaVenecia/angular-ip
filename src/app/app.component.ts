@@ -9,7 +9,7 @@ import { Component,  } from '@angular/core';
 export class AppComponent {
   title = 'Quotly';
   displayValue(){
-    console.log("Haiyaaaa")
+
   }
 
 }
