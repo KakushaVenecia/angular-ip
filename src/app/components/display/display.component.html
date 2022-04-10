@@ -1,6 +1,6 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-<div>
+<div class="container">
 <ul *ngFor="let quote of quotes; let i= index">
     <label for="new">Quote</label>
     <p>{{quote.newQuote}}</p>
@@ -8,6 +8,6 @@
     <p>{{quote.author}}</p>
     <br>
     <app-quote-details [quote]="quote"></app-quote-details>
-    <button (click)="upVote(i)">Upvote {{quote.upvotes}}</button><button (click)="downVote(i)">Downvote {{quote.downvotes}}</button><button (click)="deleteQuote(i)" >Delete</button>
+    <button (click)="upVote(i)"><i class="fa fa-thumbs-up"></i>Upvote{{quote.upvotes}}</button><button (click)="downVote(i)"><i class="fa fa-thumbs-down"></i>Downvote {{quote.downvotes}}</button><button (click)="deleteQuote(i)" >Delete</button>
 </ul>
 </div> 
