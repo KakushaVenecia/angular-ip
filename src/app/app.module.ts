@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Pipe } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { DisplayComponent } from './components/display/display.component';
+import { TimeElapsedPipe } from './time-elapsed.pipe';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { DisplayComponent } from './components/display/display.component';
     AppComponent,
     FormComponent,
     DisplayComponent,
+    TimeElapsedPipe
   
   ],
   imports: [

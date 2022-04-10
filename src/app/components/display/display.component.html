@@ -1,1 +1,14 @@
-<p> Hello World</p>
+
+<div>
+<ul *ngFor="let quote of quotes; let i= index">
+    <li>{{quote.newQuote}}</li>
+    <li>{{quote.author}}</li>
+    <li>{{quote.name}}</li>
+    <li>{{quote.dateCreated}}</li>
+    <li>{{quote.dateCreated | timeElapsed}} seconds ago</li>
+    <br>
+    <li><button (click)="upVote(i)">Upvote {{quote.upvotes}}</button><button (click)="downVote(i)">Downvote {{quote.downvotes}}</button><button (click)="deleteQuote(i)" >Delete</button></li>
+</ul>
+
+
+</div> 

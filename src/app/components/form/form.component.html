@@ -1,28 +1,32 @@
 
 <div class="container">
 <h2>Add a Quote</h2>
-<form #right="ngForm" (ngSubmit)="onSubmit()"> 
+<form #right="ngForm"> 
     <div class="form-group">
         <label for="newQuote">Quote</label> <br>
-        <textarea #write="ngModel"required minlegth="3" placeholder="Input a quote here" name="newQuote" cdkTextareaAutosize ngModel> 
+        <textarea [(ngModel)]="newQuote"required minlegth="3" placeholder="Input a quote here" name="newQuote" cdkTextareaAutosize> 
         </textarea>
-        <div *ngIf= "write.touched && write.invalid" class= "alert alert-danger">INVALID BANA !!! </div>
+        <!-- <div *ngIf= "write.touched && write.invalid" class= "alert alert-danger">INVALID BANA !!! </div> -->
     </div>
     <pre></pre>
     <div class="form-group">
         <label for="authorName"> Author</label> <br>
-        <input #writer="ngModel"required minlength="2" type="text" placeholder="Who is the author?" name="aut horName" class="form-control" ngModel>
-        <div *ngIf= "writer.touched && writer.invalid" class= "alert alert-danger">INVALID BANA !!! 
-    </div>
+        <input [(ngModel)]="author" minlength="2" type="text" placeholder="Who is the author?" name="authorName" class="form-control">
+        <!-- <div *ngIf= "writer.touched && writer.invalid" class= "alert alert-danger">INVALID BANA !!!  -->
+    <!-- </div> -->
     </div>
     <pre></pre>
     <div class="form-group">
         <label for="yourName">Your Name</label> <br>
-        <input #name="ngModel"required minlength="2" type="text" placeholder="Tell us who you are"name="yourName" class="form-control" ngModel>
-        <div *ngIf= "name.touched && name.invalid" class= "alert alert-danger">INVALID BANA!!! </div>
+        <input [(ngModel)]="name" required minlength="2" type="text" placeholder="Tell us who you are"name="yourName" class="form-control">
+        <!-- <div *ngIf= "name.touched && name.invalid" class= "alert alert-danger">INVALID BANA!!! </div> -->
     </div>
     <pre></pre>
-    <button (click)="onClick()" class="btn btn-primary" type="submit">Add Quote</button>
+    <!-- <button class="btn btn-primary" type="submit">Add Quote</button> -->
+    <button (click)="addQuote()" class="btn btn-primary" type="submit">Add Quote</button>
 </form>
 </div>
-<app-display></app-display>
+<app-display [quotes] ="quoteArray" (deleteSingleQuote)="deleteQuote($event)" 
+(upvoteQuote)="upvoteQuote($event)" 
+(downvoteQuote)="downvoteQuote($event)"></app-display>
+
