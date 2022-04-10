@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { DisplayComponent } from './components/display/display.component';
 import { TimeElapsedPipe } from './time-elapsed.pipe';
+import { QuoteDetailsComponent } from './components/quote-details/quote-details.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TimeElapsedPipe } from './time-elapsed.pipe';
     AppComponent,
     FormComponent,
     DisplayComponent,
-    TimeElapsedPipe
+    TimeElapsedPipe,
+    QuoteDetailsComponent
   
   ],
   imports: [
