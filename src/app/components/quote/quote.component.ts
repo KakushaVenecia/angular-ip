@@ -1,5 +1,7 @@
 export class QuoteComponent {
-    constructor
+    constructor(){
+
+    }
     
 
 }
