@@ -1,0 +1,57 @@
+h2 {
+  color: rgb(15, 14, 14);
+  text-align: left;
+}
+
+.container {
+  border-style: dotted;
+  border-radius: 12px;
+  float: left;
+  width: 300px;
+  background-color: rgb(237, 177, 177);
+  padding-left: 20px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+label {
+  color: rgb(2, 2, 2);
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+input {
+  width: 270px;
+  padding: 5px;
+}
+
+textarea {
+  width: 280px;
+  height: 50px;
+}
+
+form {
+  width: 300px;
+  background-color: inherit;
+}
+
+button {
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(69, 200, 200);
+  padding: 6px;
+  align-content: center;
+}
+.alert{
+background-color:inherit;
+width: 280px;
+}
+.alert-danger{
+  color: rgb(17, 84, 84);
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
