@@ -1,7 +1,10 @@
 # Quotly
+This is an application that allows you to add a quote, and vote on a quote you like. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
-
+## Author
+ Kakusha Venecia
+ 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
